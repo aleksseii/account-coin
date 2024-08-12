@@ -24,7 +24,7 @@ func NewDatabase() (*DatabaseInterface, error) {
 	var database DatabaseInterface = &MockDB{}
 	err := database.SetupDatabase()
 	if err != nil {
-		logger.Fatalf("Failed to setup database, err: %v", err)
+		logger.Errorf("Failed to setup database, err: %v", err)
 	}
 	return &database, err
 }

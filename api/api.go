@@ -7,12 +7,12 @@ import (
 )
 
 type CoinBalanceParams struct {
-	username string
+	Username string
 }
 
 type CoinBalanceResponse struct {
-	code    uint16
-	balance int64
+	Code    uint16
+	Balance int64
 }
 
 type Error struct {
@@ -30,7 +30,7 @@ func writeError(responseWriter http.ResponseWriter, code uint16, message string)
 
 	err := json.NewEncoder(responseWriter).Encode(response)
 	if err != nil {
-		logger.Fatalf("Failed to write response, err: %v", err)
+		logger.Errorf("Failed to write response, err: %v", err)
 	}
 }
 

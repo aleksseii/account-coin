@@ -37,7 +37,7 @@ func Authorization(nextHandler http.Handler) http.Handler {
 
 			loginDetails := (*database).GetUserLoginDetails(username)
 			if loginDetails == nil || incomingToken != (*loginDetails).AuthToken {
-				logger.Fatalf("unknown user or user with invalid token, err: %v", err)
+				logger.Errorf("unknown user or user with invalid token, err: %v", err)
 				api.RequestErrorHandler(responseWriter, unauthorizedError)
 				return
 			}
