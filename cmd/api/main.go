@@ -3,7 +3,7 @@ package main
 import (
 	"account-coin/internal/handler"
 	"fmt"
-	"github.com/go-chi/chi"
+	"github.com/go-chi/chi/v5"
 	logger "github.com/sirupsen/logrus"
 	"net/http"
 	"os"

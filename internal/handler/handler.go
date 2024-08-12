@@ -2,8 +2,8 @@ package handler
 
 import (
 	"account-coin/internal/middleware"
-	"github.com/go-chi/chi"
-	chimiddleware "github.com/go-chi/chi/middleware"
+	"github.com/go-chi/chi/v5"
+	chimiddleware "github.com/go-chi/chi/v5/middleware"
 )
 
 func Handler(router *chi.Mux) {
