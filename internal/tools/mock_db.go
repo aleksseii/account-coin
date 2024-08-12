@@ -7,31 +7,31 @@ type MockDB struct {
 
 var mockLoginDetails = map[string]LoginDetails{
 	"alex": {
-		username:  "alex",
-		authToken: "fsdga1343551423gasf",
+		Username:  "alex",
+		AuthToken: "fsdga1343551423gasf",
 	},
 	"jason": {
-		username:  "jason",
-		authToken: "daskhgfi2384192379ahskdf",
+		Username:  "jason",
+		AuthToken: "daskhgfi2384192379ahskdf",
 	},
 	"marie": {
-		username:  "marie",
-		authToken: "sdkjhfka27y34i1ykabsdfk",
+		Username:  "marie",
+		AuthToken: "sdkjhfka27y34i1ykabsdfk",
 	},
 }
 
 var mockCoinDetails = map[string]CoinDetails{
 	"alex": {
-		username: "alex",
-		coins:    62123,
+		Username: "alex",
+		Coins:    62123,
 	},
 	"jason": {
-		username: "jason",
-		coins:    13123123,
+		Username: "jason",
+		Coins:    13123123,
 	},
 	"marie": {
-		username: "marie",
-		coins:    123,
+		Username: "marie",
+		Coins:    123,
 	},
 }
 

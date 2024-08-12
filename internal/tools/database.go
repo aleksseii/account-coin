@@ -11,16 +11,16 @@ type DatabaseInterface interface {
 }
 
 type LoginDetails struct {
-	username  string
-	authToken string
+	Username  string
+	AuthToken string
 }
 
 type CoinDetails struct {
-	coins    int64
-	username string
+	Coins    int64
+	Username string
 }
 
-func NewDatabse() (*DatabaseInterface, error) {
+func NewDatabase() (*DatabaseInterface, error) {
 	var database DatabaseInterface = &MockDB{}
 	err := database.SetupDatabase()
 	if err != nil {
